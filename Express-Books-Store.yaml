@@ -1,0 +1,731 @@
+type: collection.insomnia.rest/5.0
+name: Express Book Store
+meta:
+  id: wrk_dcd2ab69f2c940799c8a4b5729e51360
+  created: 1742908739040
+  modified: 1759476663551
+  description: ""
+collection:
+  - name: Users
+    meta:
+      id: fld_db342952eef84ddfa6fd62b3056e3949
+      created: 1759476707311
+      modified: 1759476707311
+      sortKey: -1759476707311
+      description: ""
+    children:
+      - url: http://localhost:2025/users
+        name: GET ALL
+        meta:
+          id: req_2c5502ad582d4224904febb6a2a91596
+          created: 1759476712131
+          modified: 1759478304047
+          isPrivate: false
+          description: ""
+          sortKey: -1759476712131
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/users
+        name: CREATE
+        meta:
+          id: req_edcf04d009694edfaa53d5dd6e5ed459
+          created: 1759478318694
+          modified: 1759478526802
+          isPrivate: false
+          description: ""
+          sortKey: -1759478318694
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "name": "Ziyodulloh",
+              "email": "Ziyodulloh@gmail.com",
+              "password": "password123",
+              "role": "ADMIN"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/users/272b653b-5fa2-450f-90d7-4fdef5b2d897
+        name: GET BY ID
+        meta:
+          id: req_db3d5539ac09443ebb9a49cefc376dbc
+          created: 1759478571100
+          modified: 1759478600771
+          isPrivate: false
+          description: ""
+          sortKey: -1759478571100
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/users/272b653b-5fa2-450f-90d7-4fdef5b2d897
+        name: UPDATE
+        meta:
+          id: req_16f7148069bb4e099f71c7f2a44f937f
+          created: 1759478692237
+          modified: 1759478739532
+          isPrivate: false
+          description: ""
+          sortKey: -1759478444897
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "name": "Ahror",
+              "email": "ahror@gmail.com",
+              "password": "125023",
+              "role": "ADMIN"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/users/272b653b-5fa2-450f-90d7-4fdef5b2d897
+        name: "UPDATE "
+        meta:
+          id: req_83805b4ef8b64cb9a86fd6efa913232d
+          created: 1759478783044
+          modified: 1759478787620
+          isPrivate: false
+          description: ""
+          sortKey: -1759478381795.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "name": "Ahror",
+              "email": "ahror@gmail.com",
+              "password": "125023",
+              "role": "ADMIN"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/users/272b653b-5fa2-450f-90d7-4fdef5b2d897
+        name: DELETE
+        meta:
+          id: req_8d6a43898fe3482ba8c45ebdd71e03df
+          created: 1759479115997
+          modified: 1759479123130
+          isPrivate: false
+          description: ""
+          sortKey: -1759478507998.5
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/users/64b10ec0-0506-4c83-9a32-a15e0a384b47/orders
+        name: users/:id/orders
+        meta:
+          id: req_cd1c490e5657405f8d8cc9816ef3a337
+          created: 1759479166714
+          modified: 1759479218624
+          isPrivate: false
+          description: ""
+          sortKey: -1759478539549.25
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/login
+        name: LOGIN
+        meta:
+          id: req_170533c3200e40e1887f9865c5b04280
+          created: 1759480436976
+          modified: 1759480501626
+          isPrivate: false
+          description: ""
+          sortKey: -1759478571200
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "Ziyodulloh@gmail.com",
+            	"password": "password123"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Categories
+    meta:
+      id: fld_e92f0642ee0746f2814297109171239c
+      created: 1759479243124
+      modified: 1759479243124
+      sortKey: -1759317050680
+      description: ""
+    children:
+      - url: http://localhost:2025/categories
+        name: GET ALL
+        meta:
+          id: req_6997d0c13e0749818c1b68e77d9207f2
+          created: 1759479243128
+          modified: 1759479568508
+          isPrivate: false
+          description: ""
+          sortKey: -1759476712131
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/categories
+        name: CREATE
+        meta:
+          id: req_c997d2c476fd4a9699841a632e2f9c6d
+          created: 1759479243132
+          modified: 1759479591961
+          isPrivate: false
+          description: ""
+          sortKey: -1759478318694
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "name": "Fiction",
+              "description": "Fictional books and novels"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/categories/30923bd7-b185-426a-a5b0-34d29bf971c4
+        name: GET BY ID
+        meta:
+          id: req_56f83011b4de4080a0c54148adc9787c
+          created: 1759479243134
+          modified: 1759479624814
+          isPrivate: false
+          description: ""
+          sortKey: -1759478571100
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/categories/30923bd7-b185-426a-a5b0-34d29bf971c4
+        name: UPDATE
+        meta:
+          id: req_9a83ee1f08c9425cba68f2abceb53dd9
+          created: 1759479243136
+          modified: 1759479701072
+          isPrivate: false
+          description: ""
+          sortKey: -1759478444897
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"description": "Updated description for category"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/categories/30923bd7-b185-426a-a5b0-34d29bf971c4
+        name: "UPDATE "
+        meta:
+          id: req_bcae7a28342e425d9fc510c7b3f56061
+          created: 1759479243138
+          modified: 1759479723535
+          isPrivate: false
+          description: ""
+          sortKey: -1759478381795.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "name": "Updated Fiction",
+              "description": "Updated full category details"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/categories/30923bd7-b185-426a-a5b0-34d29bf971c4
+        name: DELETE
+        meta:
+          id: req_5a9f1ca1d8fb4aa6b90f352f4e648ddf
+          created: 1759479243140
+          modified: 1759479736805
+          isPrivate: false
+          description: ""
+          sortKey: -1759478507998.5
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Books
+    meta:
+      id: fld_4f71c3911d7648d89ba06888299c9e48
+      created: 1759479761247
+      modified: 1759479761247
+      sortKey: -1759396878995.5
+      description: ""
+    children:
+      - url: http://localhost:2025/books
+        name: GET ALL
+        meta:
+          id: req_ef4b19b844e14685bfb775afbf27e9f4
+          created: 1759479761250
+          modified: 1759479837743
+          isPrivate: false
+          description: ""
+          sortKey: -1759476712131
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/books
+        name: CREATE
+        meta:
+          id: req_f6f641f5bdff488f9746c4ec44f3875e
+          created: 1759479761253
+          modified: 1759479902623
+          isPrivate: false
+          description: ""
+          sortKey: -1759478318694
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "title": "The Great Gatsby",
+              "author": "F. Scott Fitzgerald",
+              "price": 15.99,
+              "categoryID": "9e44629a-3f81-4465-b076-286a91666051",
+              "stock": 50
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/books/3d15ff59-c537-4544-9e85-118e95ac16c9
+        name: GET BY ID
+        meta:
+          id: req_1d3ed539448b4bc49580282f9681a414
+          created: 1759479761255
+          modified: 1759479941715
+          isPrivate: false
+          description: ""
+          sortKey: -1759478571100
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/books/3d15ff59-c537-4544-9e85-118e95ac16c9
+        name: UPDATE
+        meta:
+          id: req_5d47f64fea6243a9b1610a9849fa1615
+          created: 1759479761259
+          modified: 1759479983228
+          isPrivate: false
+          description: ""
+          sortKey: -1759478444897
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "title": "The Great Gatsby",
+              "author": "F. Scott Fitzgerald",
+              "price": 10.99,
+              "categoryID": "9e44629a-3f81-4465-b076-286a91666051",
+              "stock": 50
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/books/3d15ff59-c537-4544-9e85-118e95ac16c9
+        name: "UPDATE "
+        meta:
+          id: req_cfc9a122abef40b99e936d7856381ba6
+          created: 1759479761262
+          modified: 1759480007047
+          isPrivate: false
+          description: ""
+          sortKey: -1759478381795.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "title": "The Great Gatsby",
+              "author": "F. Scott Fitzgerald",
+              "price": 10.99,
+              "categoryID": "9e44629a-3f81-4465-b076-286a91666051",
+              "stock": 50
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/books/3d15ff59-c537-4544-9e85-118e95ac16c9
+        name: DELETE
+        meta:
+          id: req_a64e66203e2545f283056988e779163a
+          created: 1759479761264
+          modified: 1759480016018
+          isPrivate: false
+          description: ""
+          sortKey: -1759478507998.5
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Orders
+    meta:
+      id: fld_6fa4157df8034516902c8169c749bb8a
+      created: 1759480136000
+      modified: 1759480136000
+      sortKey: -1759356964837.75
+      description: ""
+    children:
+      - url: http://localhost:2025/orders
+        name: GET ALL
+        meta:
+          id: req_33318284308e440b8bbe4b6805a1c9d3
+          created: 1759480136005
+          modified: 1759480146743
+          isPrivate: false
+          description: ""
+          sortKey: -1759476712131
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/orders
+        name: CREATE
+        meta:
+          id: req_e2b4430c1cae4cf58668a92ec4768a7d
+          created: 1759480136012
+          modified: 1759480227845
+          isPrivate: false
+          description: ""
+          sortKey: -1759478318694
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "userID": "7fbe17fc-ae85-4c92-9a7b-99b3ac5995a7",
+              "bookID": "42959620-d5e0-4759-8b66-a80c413c2e37",
+              "quantity": 3
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/orders/eb875313-c395-4d19-82f7-e87672c5673c
+        name: GET BY ID
+        meta:
+          id: req_86c5ffe047df482fba6ff46647156c24
+          created: 1759480136020
+          modified: 1759480289610
+          isPrivate: false
+          description: ""
+          sortKey: -1759478571100
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/orders/eb875313-c395-4d19-82f7-e87672c5673c
+        name: UPDATE
+        meta:
+          id: req_d9759a0f069949f5b2e0fdee8c136abb
+          created: 1759480136030
+          modified: 1759480330437
+          isPrivate: false
+          description: ""
+          sortKey: -1759478444897
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "quantity": 5
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/orders/eb875313-c395-4d19-82f7-e87672c5673c
+        name: "UPDATE "
+        meta:
+          id: req_6a8cfffa566f4426a21600db94f166ef
+          created: 1759480136033
+          modified: 1759480360441
+          isPrivate: false
+          description: ""
+          sortKey: -1759478381795.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "userID": "7fbe17fc-ae85-4c92-9a7b-99b3ac5995a7",
+              "bookID": "42959620-d5e0-4759-8b66-a80c413c2e37",
+              "quantity": 3
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:2025/orders/eb875313-c395-4d19-82f7-e87672c5673c
+        name: DELETE
+        meta:
+          id: req_73720df3b58f4a9b803ea0ec0816bf49
+          created: 1759480136036
+          modified: 1759480417015
+          isPrivate: false
+          description: ""
+          sortKey: -1759478507998.5
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_6a7e8066835945a09dc5436b8806d4fd
+    created: 1732054571234
+    modified: 1732054571234
+environments:
+  name: Base Environment
+  meta:
+    id: env_f0bcee9ae66d4400bc1b13de7c1abc7b
+    created: 1732054571232
+    modified: 1732054571232
+    isPrivate: false
