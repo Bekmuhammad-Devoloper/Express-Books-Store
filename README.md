@@ -24,7 +24,7 @@ Express.js va JSON fayl asosidagi ma'lumotlar bazasi yordamida yaratilgan onlayn
 ## 🚀 O'rnatish
 ```bash
 # Repozitoriyani klonlash
-git clone https://github.com/username/bookstore-api.git
+git clone https://github.com/Bekmuhammad-Devoloper/bookstore-api.git
 cd bookstore-api
 
 # Bog'liqliklarni o'rnatish
